@@ -1,12 +1,12 @@
 const e1=()=>{
-    Swal.fire('Any fool can use a computer')
+    Swal.fire('YA RETIRATE PORFA')
 }
 
 const e2=()=>{
     Swal.fire(
-        'The Internet?',
-        'That thing is still around?',
-        'question'
+        'TIENES VIDA?',
+        'ENSRIO QUE SI??',
+        'UNA PREGUNTA'
       )
 }
 
@@ -30,27 +30,27 @@ const e4=()=>{
         showCancelButton: true,
         focusConfirm: false,
         confirmButtonText:
-          '<i class="fa fa-thumbs-up"></i> Great!',
-        confirmButtonAriaLabel: 'Thumbs up, great!',
+          '<i class="NO LA VERDAD NO TROCAS"></i> SIEMPRE YA NO!',
+        confirmButtonAriaLabel: 'USH NO, QUE BURRO ERES!',
         cancelButtonText:
-          '<i class="fa fa-thumbs-down"></i>',
-        cancelButtonAriaLabel: 'Thumbs down'
+          '<i class="BUENO TE DOY UNA OPORTUNIDAD"></i>',
+        cancelButtonAriaLabel: 'TU PUEDES BURRIS'
       })
     }
 
 const e5=()=>{
     Swal.fire({
-        title: 'Do you want to save the changes?',
+        title: 'TU TIENES ALGUNA RELACION?',
         showDenyButton: true,
         showCancelButton: true,
-        confirmButtonText: 'Save',
-        denyButtonText: `Don't save`,
+        confirmButtonText: 'CLARO',
+        denyButtonText: `LA VERDAD NO`,
       }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-          Swal.fire('Saved!', '', 'success')
+          Swal.fire('CALLATE!', '', 'NO PREGUNTES MEJOR')
         } else if (result.isDenied) {
-          Swal.fire('Changes are not saved', '', 'info')
+          Swal.fire('PREFIERO NO CONTESTAR', '', 'VETE')
         }
       })
 }
