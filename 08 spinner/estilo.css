@@ -1,0 +1,19 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body {
+    text-align: center;
+    background: rgb(238, 174, 202);
+    background: darkcyan
+  }
+  div{
+    width: 100px;
+    height: 250px;
+    border: 2px black;
+    margin: 10px;
+  }
+  
+  
+  
