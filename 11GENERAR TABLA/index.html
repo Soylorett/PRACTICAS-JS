@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="UTF-8">
+<meta charset= "UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="estilo.css">
+<title>GENERAR</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
-<title>Tabla de multiplicar</title>
+<link rel="stylesheet" href= "estilo.css">
 </head>
 
-<body onunload="generar()">
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
             <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
-            07 TRABLAS DE MULTIPLICAR
+            11 GENERAR TABLA
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,23 +22,33 @@
                     <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                     </div>
-                
                 </div>
         </div>
     </nav>
-
-    <center>
-    <h1>SLIDER CON TABLAS DE MULTIPLICAR</h1>
-    <hr>
-</center>
-<form>
-<input  type="range" onchange="generar()" min="0" max="100" value"50" id="n">
-<label id="vn">50</label>
+<h1>Generar tabla </h1><hr>
+<table>
+<tr>
+    <td> Filas</td>
+    <td><input type="range" id="fil" min="1" max="100" value="1"></td>
+    <td><span id="vf"></span></td>
+</tr>
+<tr>
+    <td>Columnas</td>
+    <td><input type="range" id="col" min="1" max="100" value="1"></td>
+    <td><span id="vc">1</span></td>
+</tr>
+<td>Color par</td>
+<td><input type="color" id="cp"></td>
+<td></td>
+</tr>
+<tr>
+    <td>Color impar</td>
+    <td><input type="color" id="ci"></td>
+    <td></td>
+</tr>
+</table>
 <div id="res"></div>
-<button onclick="borrar()" id="borrar">BORRAR</>
-</form>
 <script src="app.js"></script>
-
 </body>
-
 </html>
+

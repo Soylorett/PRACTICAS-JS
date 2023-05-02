@@ -1,20 +1,37 @@
 <!DOCTYPE html>
- <html>
+<html>
 
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="estilo.css">
-   <title>SPINNEER</title>
- </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <title>SPINNEER</title>
+</head>
 
- <body onunload="generar()">
-   <form>
-     <input type="range" onchange="generar()" min="0" max="100" value"50" id="n">
-     <label id="vn">50</label>
-     <div id="res"></div>
-     <button onclick="borrar()" id="borrar">BORRAR</>
-   </form>
-   <script src="app.js"></script>
- </body>
+<body onunload="generar()">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+        08 SPINNER
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </div>
+            </div>
+    </div>
+</nav>
+  <form>
+    <input type="range" onchange="generar()" min="0" max="100" value="50" id="n">
+    <label id="vn">50</label>
+    <div id="res"></div>
+    <button onclick="borrar()" id="borrar">BORRAR</button>
+  </form>
+  <script src="app.js"></script>
+</body>
 </html>
