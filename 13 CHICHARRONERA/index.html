@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chicharronera</title>
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="update();">
+	<h1>Chicharronera</h1>
+	<img src="data:image/png;base64,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" alt="Imagen de ejemplo" width="400">
+<br>
+<br>
+	<label>a:</label>
+	<input type="range" id="a" min="-10" max="10" value="0" oninput="update()">
+	<label id="aLabel"></label>
+	<br>
+	<label>b:</label>
+	<input type="range" id="b" min="-10" max="10" value="0" oninput="update()">
+	<label id="bLabel"></label>
+	<br>
+	<label>c:</label>
+	<input type="range" id="c" min="-10" max="10" value="0" oninput="update()">
+	<label id="cLabel"></label>
+	<br>
+	<label>Ecuacion:</label>
+	<p id="ecuacion">0x^2 + 0x + 0 = 0</p>
+	<label>Resultado 1:</label>
+	<label id="resultado1">0</label>
+	<br>
+	<label>Resultado 2:</label>
+	<label id="resultado2">0</label>
+	
+</head>
+<script src="app.js">app.js</script>
+</body>
+</html>

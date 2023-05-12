@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    }
+    body{
+        text-align: center;
+        background: rgb(209,36,36);
+        background: linear-gradient(90deg, rgba(209,36,36,1) 1%, rgba(37,24,25,1) 14%, rgba(46,193,173,1) 31%, rgba(27,69,163,1) 46%, rgba(163,103,153,1) 61%, rgba(22,5,5,1) 80%, rgba(249,13,27,1) 93%);
+    }
+div{
+        width: 150px;
+        height: 150px;
+        display:block;
+        border: 3px solid burlywood;
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
