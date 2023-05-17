@@ -2,12 +2,12 @@ let d =document.querySelector("#d")
 let m = document.querySelector("#m")
 
 d.oninput=()=>{signo()}
-m.oninput=()=>{signo()}
+m.onchange=()=>{signo()}
 
 const signo=()=> {
-document.querySelector("#vd").innerHTML.value
+document.querySelector("#vd").innerHTML=d.value
 document.querySelector("#fecha").innerHTML=`FECHA ${d.value} de ${m.value}`
-let di = parseInt(di.value)
+let di=parseInt(d.value)
 let signo=""
 switch(m.value){
     case"Enero": signo=(di>=20)?"CAPRICORNIO":"ACUARIO";break;
