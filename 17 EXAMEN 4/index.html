@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAMEN 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLIDER</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
-    
+
+<body onunload="generar">
+ <center>
+   <h1>Calcular Areas</h1>
+ </center>
+ <hr>
+ <br>
+ 	<img src="data:image/png;base64,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" alt="Imagen de ejemplo" width="200">
+ 	<br>
+ <form>
+   <label>Base:</label>
+ <input type="range" onchange= "generar()" value ="0" min="0" max="100" id="b">
+ <label id="vb">0</label>
+ <br>
+    <label>Altura:</label>
+ <input type="range" onchange= "generar()" value ="0" min="0" max="100" id="a">
+ <label id="va">0</label>
+ 
+ <div id="res"></div>
+ <button onclick="borrar ()" id="borrar">BORRAR</button>
+   </form>
+   <script src="app.js"></script>
 </body>
 </html>

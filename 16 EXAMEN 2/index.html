@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXAMEN 2</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOLA MUNDO</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css" type="text/css" media="all" />
 </head>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
-            SIGNO SODIACAL
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                    </div>
-                </div>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+        16 EXAMEN 3
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
         </div>
-    </nav>
-<h1>SIGNO SODIACAL </h1><hr>
-
-<div class=" container-fluid text-center">
-    <div class="card w-25 m-auto mt-4">
-    <h1>DIA: <input type="range" id="d" min="1" max="30" value="1"><span id="vd"></span>
-    </h1>
-<h1>MES:
-<select name="" id="m">
-    <option value="Enero">Enero</option>
-    <option value="Febrero">Febrero</option>
-    <option value="Marzo">Marzo</option>
-    <option value="Abril">Abril</option>
-    <option value="Mayo">Mayo</option>
-    <option value="Junio">Junio</option>
-    <option value="Julio">Julio</option>
-    <option value="Agosto">Agosto</option>
-    <option value="Septiembre">Septiembre</option>
-    <option value="Octubre">Octubre</option>
-    <option value="Noviembre">Noviembre</option>
-    <option value="Diciembre">Diciembre</option>
-</select>
-
-</h1>
-</div>
-
-<div class="card w-25 m-auto mt-4"><h1>FECHA</h1> </div>
-<div class="card w-25 m-auto mt-4"><h1>SIGNO</h1></div>
-</div>
-
-
-<script src="app.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-
-</body>
+    </div>
+    </div>
+</nav>
+    <center>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>ZODIACO</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body onload="lafecha()">
+            <center>
+        <h1>SIGNO ZODIACAL</h1>
+        <hr>
+        <table>
+            <tr>
+                <td>Dia<input type="range" id="dia" value="1" min="1" max="31"><span id="vdia">0</span></td>
+            </tr>
+            <tr>
+                <td>Mes
+                    <select id="mes">
+                        <option value="1">ENERO</option>
+                        <option value="2">FEBRERO</option>
+                        <option value="3">MARZO</option>
+                        <option value="4">ABRIL</option>
+                        <option value="5">MAYO</option>
+                        <option value="6">JUNIO</option>
+                        <option value="7">JULIO</option>
+                        <option value="8">AGOSTO</option>
+                        <option value="9">SEPTIEMBRE</option>
+                        <option value="10">OCTUBRE</option>
+                        <option value="11">NOVIEMBRE</option>
+                        <option value="12">DICIEMBRE</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div id="fecha"></div>
+        <br>
+        <br>
+        <div id="signo">si</div>
+            <script src="app.js"></script>
+        </body>
 </html>
