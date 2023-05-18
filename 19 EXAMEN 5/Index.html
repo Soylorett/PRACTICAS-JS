@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMEN 5</title>
+</head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+                11 GENERAR TABLA
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+<h1>Generar tabla </h1><hr>
+<table>
+<tr>
+    <td> FILAS:</td>
+    <td><input type="range" id="fil" min="1" max="100" value="1"></td>
+    <td><span id="vf">1</span></td>
+</tr>
+<tr>
+    <td>COLUMNS:</td>
+    <td><input type="range" id="col" min="1" max="100" value="1"></td>
+    <td><span id="vc">1</span></td>
+</tr>
+<td>COLOR PAR:</td>
+<td><input type="color" id="cp"></td>
+<td></td>
+</tr>
+<tr>
+    <td>COLOR IMPAR:</td>
+    <td><input type="color" id="ci"></td>
+    <td></td>
+</tr>
+</table>
+<div id="res"></div>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>

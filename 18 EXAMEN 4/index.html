@@ -7,8 +7,24 @@
     <title>SLIDER</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+<body onunload="generar"></body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+          EXAMEN
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+              </div>
+          </div>
+  </div>
+</nav>
 
-<body onunload="generar">
  <center>
    <h1>Calcular Areas</h1>
  </center>
@@ -29,5 +45,7 @@
  <button onclick="borrar ()" id="borrar">BORRAR</button>
    </form>
    <script src="app.js"></script>
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

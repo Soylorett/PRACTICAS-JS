@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+     <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
+</head>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="https://i.pinimg.com/474x/04/94/b7/0494b7f3c0ab0d318b907400d97850ff.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+            EXAMEN
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                </div>
+            </div>
+    </div>
+</nav>
+<div class="container-fluid text-center"></div>
+<h1> IMC</h1><hr>
+<div class="row">
+    <div class="col text-center">
+        <table class="m-auto">
+            <tr>
+                <td><h1>PESO</h1></td>
+                <td><input type="range" class="form-control" value="50" id="peso" min="50" max="150" step="1"></td>
+            <td><h1 class="p-3" id="vp"> 50 KG</h1></td>
+            </tr>
+            <tr>
+                <td><h1 class="p-3">ALTURA</h1></td>
+                <td><input type="range" class="form-control" value="1" id="altura" min="1" max="2" step="0.01"></td>
+            <td><h1 id="va"> 1 M </h1></td>
+            </tr>
+        </table>
+        <div id="res" class="p-4">
+            <h1 class="text-danger"> NO HAY RESULTADO</h1>
+        </div>
+    </div>
+    <div class="col w-50"></div>
+    <img src="https://www.topdoctors.mx/files/Image/large/a7af528584b6475633cf9caf0b525518.jpeg" alt="400" class="w-100">
+</div>
+    
+<script src="app.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+</center>
+  </body>
+</html>
