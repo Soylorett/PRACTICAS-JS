@@ -1,6 +1,6 @@
 let btnEvaluar=document.querySelector("#evaluar")
 btnEvaluar.onclick=()=>{
-    var correctas=[1,1,3,1,2];
+    var correctas=[1,1,2,1,2];
     var aciertos=0;
 for(i=1; i<=5; i++){
     let r1=document.querySelector("#p"+i+"r1");
